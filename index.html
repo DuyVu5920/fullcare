@@ -35,6 +35,9 @@
         <div class="header">
             <div class="grid">
                 <nav class="header__navbar">
+                    <button id="toggle-menu-bar" class="header__toggle-mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <i class="fa fa-bars"></i>
+                    </button>
                     <div class="header__site-logo">
                         <a href="" class="header__site-logo-link"><img class="header__site-logo-img"
                                 src="./assets/img/logo.png" alt=""></a>
@@ -77,6 +80,33 @@
                     </div>
                 </nav>
             </div>
+            <ul id="mobile-menu" class="header__mobile-menu">
+                <li class="header__mobile-menu-item">
+                    <a class="header__mobile-menu-item-link" href="#">Trang chủ</a>
+                </li>
+                <li id="toggle-sub-menu-bar" class="header__mobile-menu-item" onclick="toggleMobileSubMenu()">
+                    <a class="header__mobile-menu-item-link">
+                        Tìm hiểu sản phẩm
+                        <i class="fa fa-caret-down" style="float: right;"></i></a>
+                    <ul id="mobile-sub-menu" class="header__mobile-sub-menu">
+                        <li class="header__mobile-sub-menu-item">
+                            <a href="" class="header__mobile-sub-menu-link">Bảo hiểm nhân thọ</a>
+                        </li>
+                        <li class="header__mobile-sub-menu-item">
+                            <a href="" class="header__mobile-sub-menu-link">Bảo hiểm du lịch</a>
+                        </li>
+                        <li class="header__mobile-sub-menu-item">
+                            <a href="" class="header__mobile-sub-menu-link">Bảo hiểm phương tiện</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__mobile-menu-item">
+                    <a class="header__mobile-menu-item-link" href="">Giới thiệu</a>
+                </li>
+                <li class="header__mobile-menu-item">
+                    <a class="header__mobile-menu-item-link" href="">Tìm hiểu chung</a>
+                </li>
+            </ul>
         </div>
         <div class="background-slider">
             <div class="background-slider__overlay"></div>
@@ -341,6 +371,7 @@
             </div>
         </div>
     </div>
+    <script src="./assets/script/toggle-mobile-menu.js"></script>
     <script src="./assets/script/auto-slider.js"></script>
 </body>
 </html>

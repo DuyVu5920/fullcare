@@ -19,7 +19,7 @@
 	}
 	.product-section__product-card {
 		margin: auto;
-		width: 70%;
+		width: 60%;
 	}
 }
 
@@ -114,7 +114,6 @@
     }
 
 	.product-section__product-card {
-		margin: auto;
 		width: auto;
 	}
 }
@@ -135,6 +134,10 @@
     .reason-card__card-content-text {
         margin-top: 2rem;
     }
+
+	.product-section__product-card {
+		padding: 3.4rem;
+	}
 
     .contact-section__contact-form {
         width: 100% !important;

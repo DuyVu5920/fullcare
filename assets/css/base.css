@@ -1,0 +1,113 @@
+:root {
+	--primary-color: #062ba1;
+	--secondary-color: #093de6;
+	--fade-background-color: #f0f4f9;
+	--white-color: #fff;
+	--black-color: #000;
+	--gray-color: #ccc;
+	--dark-gray-color: #333;
+	--header-height: 10rem;
+	--topbar-height: 4rem;
+}
+
+* {
+	box-sizing: inherit;
+	font-size: 1.6rem;
+	line-height: 2.2rem;
+}
+
+html {
+	font-size: 62.5%;
+	color: var(--dark-gray-color);
+	line-height: 1.6rem;
+	font-family: "Be Vietnam Pro", sans-serif;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+a {
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+.fa {
+	width: 1.8rem;
+}
+
+.grid {
+	width: 1200px;
+	max-width: 100%;
+	padding: 0 2rem;
+	margin: 0 auto;
+}
+
+.grid__full-width {
+	width: 100%;
+}
+
+.grid__row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.row {
+    padding: 0 -1.5rem;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.col {
+    padding: 0 1.5rem;
+	float: left;
+}
+
+.colx2 {
+	width: 50%;
+}
+
+.colx3 {
+	width: calc(100% / 3);
+}
+
+.colx4 {
+	width: 25%;
+}
+
+.title-divider-center {
+	display: flex;
+	justify-content: center;
+}
+
+.title-divider-left {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.title-divider-right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.title-divider-separator {
+	width: 7.4rem;
+	border: 0.3rem solid var(--primary-color);
+}
+
+.title-divider-separator-white {
+    width: 7.4rem;
+	border: 0.3rem solid var(--white-color);   
+}

@@ -26,10 +26,64 @@
                         <li class="topbar__navbar-item"><i class="fa fa-phone"></i> 0862 017 299</li>
                     </ul>
                     <ul class="topbar__navbar-list">
-                        <li class="topbar__navbar-item"><i class="fa fa-user"></i> <a href="">Đăng ký</a> </li>
-                        <li class="topbar__navbar-item"><a href="">Đăng nhập</a> </li>
+                        <li class="topbar__navbar-item"><i class="fa fa-user"></i> <a href="#" onclick="openLoginForm()">Đăng nhập</a> </li>
+                        <li class="topbar__navbar-item"><a href="#" onclick="openSignupForm()">Đăng ký</a> </li>
                     </ul>
                 </nav>
+            </div>
+        </div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                <div class="grid__row">
+                    <div class="modal__content">
+                        <div class="modal__login flex-modal">
+                            <div class="modal__form-text">
+                                <h2 class="modal__title">Đăng nhập</h2>
+                                <p>Bạn chưa có tài khoản? <a href="#" onclick="openSignupForm()"> Đăng ký ngay </a></p>
+                            </div>
+
+                            <div class="modal__form-container">
+                                <form action="">
+                                    <label for="login-form__email-input">Địa chỉ email</label>
+                                    <input type="email" name="email" id="login-form__email-input"
+                                        placeholder="Nhập địa chỉ email">
+                                    <label for="login-form__password-input">Mật khẩu</label>
+                                    <input type="password" name="password" id="login-form__password-input"
+                                        placeholder="Nhập mật khẩu">
+                                    <a href="" style="float:right;">Quên mật khẩu?</a>
+                                </form>
+                            </div>
+                            <button class="login-form__btn" type="submit">Đăng nhập</button>
+                        </div>
+                        <div class="modal__signup flex-modal">
+                            <div class="modal__form-text">
+                                <h2 class="modal__title">Đăng ký</h2>
+                                <p>Bạn đã có tài khoản? <a href="#" onclick="openLoginForm()"> Đăng nhập </a></p>
+                            </div>
+
+                            <div class="modal__form-container">
+                                <form action="">
+                                    <label for="signup-form__email-input">Địa chỉ email</label>
+                                    <input type="email" name="email" id="signup-form__email-input"
+                                        placeholder="Nhập địa chỉ email">
+                                    <label for="signup-form__password-input">Mật khẩu</label>
+                                    <input type="password" name="password" id="signup-form__password-input"
+                                        placeholder="Nhập mật khẩu">
+                                        <label for="signup-form__repassword-input">Nhập lại mật khẩu</label>
+                                        <input type="repassword" name="repassword" id="signup-form__repassword-input"
+                                            placeholder="Nhập lại mật khẩu">
+                                </form>
+                            </div>
+                            <button class="signup-form__btn" type="submit">Đăng ký</button>
+                        </div>
+                    </div>
+                    <div class="modal__img-container"><img class="modal__img" src="./assets/img/modal-img.png" alt="">
+                    </div>
+
+                </div>
+                <button class="close-modal-btn" onclick="closeModalBody()">
+                    <i class="fa fa-times"></i>
+                </button>
             </div>
         </div>
         <div class="header">
@@ -373,5 +427,6 @@
     </div>
     <script src="./assets/script/toggle-mobile-menu.js"></script>
     <script src="./assets/script/auto-slider.js"></script>
+    <script src="./assets/script/modal-form.js"></script>
 </body>
 </html>

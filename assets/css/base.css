@@ -40,6 +40,18 @@ button {
 	cursor: pointer;
 }
 
+input {
+	border: 0.2rem solid #c4c4c4;
+}
+
+input:focus-visible {
+	outline-color: var(--secondary-color);
+}
+
+input::placeholder {
+	color: #929292;
+}
+
 .fa {
 	width: 1.8rem;
 }

@@ -124,7 +124,11 @@
 }
 
 @media screen and (max-width: 600px) {
-	.topbar {
+
+	.topbar__navbar {
+		justify-content: center;
+	}
+	.topbar__navbar-list.contact {
 		display: none;
 	}
 
